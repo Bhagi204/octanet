@@ -1,0 +1,125 @@
+body {
+    font-family: 'Brush Script std', cursive;
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(197, 197, 226, 0.8); 
+    border: 2px solid #7d737d; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    min-height: 500px; 
+    max-height: 80vh; 
+    overflow-y: auto; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border: 1px solid #d4b5d7;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1 1 auto;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+li.complete {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.priority-low {
+    border-left: 5px solid #2a9d8f;
+}
+
+.priority-medium {
+    border-left: 5px solid #e9c46a;
+}
+
+.priority-high {
+    border-left: 5px solid #e76f51;
+}
+
+.task-details {
+    flex: 1;
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.task-actions button {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.complete-btn {
+    background-color: #ce93e4;
+}
+
+.complete-btn:hover {
+    background-color: #bc4edd;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
